@@ -6,8 +6,8 @@
     "scripts": {
         "serve:dev": "webpack serve --env dev --mode development",
         "serve:prod": "webpack serve --mode production",
-        "build:dev": "webpack --env dev --mode development",
-        "build:prod": "webpack --mode production"
+        "build:dev": "webpack --env dev --mode development && cp ./index.html ./build",
+        "build:prod": "webpack --mode production && cp ./index.html ./build"
     },
     "keywords": [],
     "author": "",
