@@ -1,6 +1,7 @@
 const path = require('path');
 const Dotenv = require('dotenv-webpack');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const port = process.env.PORT || 3000;
 
 module.exports = env => {
@@ -69,6 +70,9 @@ module.exports = env => {
             ]
         },
         plugins: [
+            new HtmlWebpackPlugin({
+                template: 'index.html'
+            }),
             new Dotenv({
                 path: `./.env.${devEnv}`
             }),
