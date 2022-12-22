@@ -1,9 +1,8 @@
-
 # Webpack env demo
 
 Demo of how webpack works with lazy React components determined by `process.env` variables
 
-`yarn build` will run webpack build to `./build` folder and serve bundle analyzer.
+`yarn build` runs webpack build to `./build` folder and serves bundle analyzer.
 
 ```
   yarn
